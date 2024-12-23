@@ -11,7 +11,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* 
+*  Upgrade to Web3j 4.12.3 and release web3j gradle plugin 4.12.3 [#90](https://github.com/hyperledger/web3j-gradle-plugin/pull/90)
 
 ### BREAKING CHANGES
 
