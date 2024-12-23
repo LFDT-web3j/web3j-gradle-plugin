@@ -26,7 +26,7 @@ apply {
         'junit'
     ].each { buildScript ->
         download {
-            src "https://raw.githubusercontent.com/hyperledger/web3j-build-tools/main/gradle/$buildScript/build.gradle"
+            src "https://raw.githubusercontent.com/hyperledger-web3j/web3j-build-tools/main/gradle/$buildScript/build.gradle"
             dest "$rootDir/gradle/$buildScript/build.gradle"
             overwrite true
             quiet true
@@ -64,7 +64,7 @@ dependencies {
 
 gradlePlugin {
     website = 'https://web3j.io/'
-    vcsUrl = 'https://github.com/hyperledger/web3j-gradle-plugin'
+    vcsUrl = 'https://github.com/hyperledger-web3j/web3j-gradle-plugin'
     plugins {
         web3j {
             description = 'Gradle plugin providing tasks to generate web3j contracts from Solidity.'
