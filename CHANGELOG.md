@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [4.12.4]() (Upcoming)
+# [4.13.1]() (Upcoming)
 
 ### Bug Fixes
 
@@ -12,6 +12,21 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * 
+
+### BREAKING CHANGES
+
+*
+
+# [4.13.0](https://github.com/hyperledger-web3j/web3j-gradle-plugin/releases/tag/v4.13.0) (2024-03-07)
+
+### Bug Fixes
+
+*
+
+### Features
+
+* Upgrade to Web3j 4.13.0 and release web3j gradle plugin 4.13.0 [#97](https://github.com/hyperledger-web3j/web3j-gradle-plugin/pull/97)
+
 
 ### BREAKING CHANGES
 
