@@ -12,7 +12,7 @@ plugins {
 description = 'Gradle plugin providing tasks to generate Web3j contracts from Solidity.'
 
 java {
-    sourceCompatibility = 17
+    sourceCompatibility = 21
 }
 
 ext {
@@ -29,7 +29,7 @@ apply {
         'junit'
     ].each { buildScript ->
         download.run {
-            src "https://raw.githubusercontent.com/hyperledger-web3j/web3j-build-tools/main/gradle/$buildScript/build.gradle"
+            src "https://raw.githubusercontent.com/LFDT-web3j/web3j-build-tools/main/gradle/$buildScript/build.gradle"
             dest "$rootDir/gradle/$buildScript/build.gradle"
             overwrite true
             quiet true
@@ -67,7 +67,7 @@ dependencies {
 
 gradlePlugin {
     website = 'https://web3j.io/'
-    vcsUrl = 'https://github.com/hyperledger-web3j/web3j-gradle-plugin'
+    vcsUrl = 'https://github.com/LFDT-web3j/web3j-gradle-plugin'
     plugins {
         web3j {
             description = 'Gradle plugin providing tasks to generate web3j contracts from Solidity.'
