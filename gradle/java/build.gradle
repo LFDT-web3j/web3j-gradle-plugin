@@ -1,10 +1,10 @@
 apply plugin: 'java'
 
 java {
-    sourceCompatibility = 17
-    targetCompatibility = 17
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
 }
-
 compileJava {
     options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
 }

@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [4.13.1]() (Upcoming)
+# [4.14.0]() (Upcoming)
 
 ### Bug Fixes
 
@@ -15,7 +15,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### BREAKING CHANGES
 
-*
+* Migrate to java 21 [#98](https://github.com/LFDT-web3j/web3j-gradle-plugin/pull/98)
 
 # [4.13.0](https://github.com/hyperledger-web3j/web3j-gradle-plugin/releases/tag/v4.13.0) (2024-03-07)
 
