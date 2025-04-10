@@ -3,7 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [4.14.0]() (Upcoming)
+# [4.14.1]() (Upcoming)
+
+### Bug Fixes
+
+* Update maintainers [#99](https://github.com/LFDT-web3j/web3j-gradle-plugin/pull/99)
+
+### Features
+
+*
+
+### BREAKING CHANGES
+
+* 
+
+# [4.14.0](https://github.com/LFDT-web3j/web3j-gradle-plugin/releases/tag/v4.14.0) (2025-04-10)
 
 ### Bug Fixes
 

@@ -9,7 +9,7 @@ run independently.
 
 To configure the Web3j Gradle Plugin using the plugins DSL or the legacy plugin application, 
 check the [plugin page](https://plugins.gradle.org/plugin/org.web3j). 
-The minimum Gradle version to run the plugin is `5.+`.
+The minimum Gradle version to run the plugin is `7.+`.
 
 Then run your project containing Solidity contracts:
 
