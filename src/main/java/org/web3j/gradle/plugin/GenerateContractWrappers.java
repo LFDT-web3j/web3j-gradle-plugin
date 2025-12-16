@@ -25,7 +25,7 @@ import org.gradle.api.tasks.TaskAction;
 import org.gradle.workers.WorkerExecutor;
 
 @CacheableTask
-public class GenerateContractWrappers extends SourceTask {
+public abstract class GenerateContractWrappers extends SourceTask {
 
     private final WorkerExecutor executor;
 
