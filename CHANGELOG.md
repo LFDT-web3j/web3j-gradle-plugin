@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [4.14.1]() (Upcoming)
+# [4.15.0]() (Upcoming)
 
 ### Bug Fixes
 
@@ -11,11 +11,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-*
+* Gradle 9 compatibility [#100](https://github.com/LFDT-web3j/web3j-gradle-plugin/pull/100)
 
 ### BREAKING CHANGES
 
-* 
+* Updates the underlying 'org.web3j.solidity' plugin to version 0.7.0
 
 # [4.14.0](https://github.com/LFDT-web3j/web3j-gradle-plugin/releases/tag/v4.14.0) (2025-04-10)
 
