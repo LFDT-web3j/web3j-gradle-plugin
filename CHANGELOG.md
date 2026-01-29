@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [4.14.1]() (Upcoming)
+# [5.0.2]() (Upcoming)
 
 ### Bug Fixes
 
@@ -15,7 +15,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### BREAKING CHANGES
 
-* 
+* Gradle 9 compatibility, thanks to @jjohannes [#100][#101](https://github.com/LFDT-web3j/web3j-gradle-plugin/pull/101)
 
 # [4.14.0](https://github.com/LFDT-web3j/web3j-gradle-plugin/releases/tag/v4.14.0) (2025-04-10)
 

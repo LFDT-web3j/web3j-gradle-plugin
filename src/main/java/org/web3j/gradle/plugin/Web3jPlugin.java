@@ -177,7 +177,7 @@ public class Web3jPlugin implements Plugin<Project> {
 
     protected File buildOutputDir(final SourceSet sourceSet) {
         final SoliditySourceSet soliditySourceSet =
-                (SoliditySourceSet) sourceSet.getExtensions().getByName(SoliditySourceSet.NAME);
+                sourceSet.getExtensions().getByType(SoliditySourceSet.class);
 
         return soliditySourceSet.getDestinationDirectory().getAsFile().get();
     }

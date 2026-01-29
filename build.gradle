@@ -41,7 +41,7 @@ apply {
 
 repositories {
     maven {
-        url 'https://plugins.gradle.org/m2/'
+        url = 'https://plugins.gradle.org/m2/'
     }
 }
 
@@ -98,6 +98,10 @@ tasks.register("generateVersionProperties") {
         def generated = new File(generatedResources, "version.properties")
         generated.text = "version=$rootProject.version"
     }
+}
+
+test {
+    reports.html.outputLocation = reporting.baseDirectory.dir(name)
 }
 
 tasks.named('spotlessKotlin') {
