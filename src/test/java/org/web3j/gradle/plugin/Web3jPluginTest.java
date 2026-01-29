@@ -69,7 +69,7 @@ public class Web3jPluginTest {
                         + "}\n"
                         + "repositories {\n"
                         + "    mavenCentral()\n"
-                        + "    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }\n"
+                        + "    maven { url 'https://central.sonatype.com/repository/maven-snapshots/' }\n"
                         + "}\n";
 
         Files.write(buildFile, buildFileContent.getBytes());

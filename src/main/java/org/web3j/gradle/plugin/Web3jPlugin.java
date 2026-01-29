@@ -25,7 +25,6 @@ import org.gradle.api.Project;
 import org.gradle.api.Task;
 import org.gradle.api.file.SourceDirectorySet;
 import org.gradle.api.internal.plugins.PluginApplicationException;
-import org.gradle.api.plugins.Convention;
 import org.gradle.api.plugins.JavaPlugin;
 import org.gradle.api.plugins.JavaPluginExtension;
 import org.gradle.api.tasks.SourceSet;
@@ -177,12 +176,9 @@ public class Web3jPlugin implements Plugin<Project> {
     }
 
     protected File buildOutputDir(final SourceSet sourceSet) {
-        final Convention convention =
-                (Convention) InvokerHelper.getProperty(sourceSet, "convention");
-
         final SoliditySourceSet soliditySourceSet =
-                (SoliditySourceSet) convention.getPlugins().get(SoliditySourceSet.NAME);
+                sourceSet.getExtensions().getByType(SoliditySourceSet.class);
 
-        return soliditySourceSet.getSolidity().getDestinationDirectory().getAsFile().get();
+        return soliditySourceSet.getDestinationDirectory().getAsFile().get();
     }
 }

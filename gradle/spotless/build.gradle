@@ -1,15 +1,15 @@
 
 apply plugin: 'com.diffplug.spotless'
-apply plugin: "de.undercouch.download"
+apply plugin: 'de.undercouch.download'
 
-task downloadJavaLicense(type: Download) {
+tasks.register('downloadJavaLicense', Download) {
     src 'https://raw.githubusercontent.com/LFDT-web3j/web3j-build-tools/main/gradle/spotless/java.license'
     dest new File("$rootDir/gradle/spotless",'java.license')
     quiet true
     onlyIfModified true
 }
 
-task downloadFormatterProperties(type: Download) {
+tasks.register('downloadFormatterProperties', Download) {
     src 'https://raw.githubusercontent.com/LFDT-web3j/web3j-build-tools/main/gradle/spotless/formatter.properties'
     dest new File("$rootDir/gradle/spotless",'formatter.properties')
     quiet true
@@ -23,7 +23,7 @@ spotless {
             include '**/src/*/java/**/*.java'
             exclude '**/.gradle/**'
             exclude '**/generated/**'
-            exclude '**/build/install/**'
+            exclude '**/build/**'
         }
         removeUnusedImports()
         googleJavaFormat('1.17.0').aosp()
@@ -37,7 +37,7 @@ spotless {
         target fileTree('.') {
             include '**/*.kt'
             exclude '**/.gradle/**'
-            exclude '**/build/install/**'
+            exclude '**/build/**'
         }
         ktlint('0.49.1')
         trimTrailingWhitespace()
@@ -48,7 +48,7 @@ spotless {
         target '*.gradle'
         greclipse().configFile("$rootDir/gradle/spotless/formatter.properties")
         endWithNewline()
-        indentWithSpaces(4)
+        leadingTabsToSpaces(4)
     }
 }
 

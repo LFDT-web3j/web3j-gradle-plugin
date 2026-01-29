@@ -17,17 +17,23 @@ import java.text.MessageFormat;
 import java.util.List;
 import javax.inject.Inject;
 
+import org.gradle.api.DefaultTask;
+import org.gradle.api.file.ConfigurableFileCollection;
 import org.gradle.api.tasks.CacheableTask;
 import org.gradle.api.tasks.Input;
+import org.gradle.api.tasks.InputFiles;
 import org.gradle.api.tasks.Optional;
-import org.gradle.api.tasks.SourceTask;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.workers.WorkerExecutor;
 
 @CacheableTask
-public class GenerateContractWrappers extends SourceTask {
+public class GenerateContractWrappers extends DefaultTask {
 
     private final WorkerExecutor executor;
+
+    private final ConfigurableFileCollection sources = getProject().files();
 
     @Input private String generatedJavaPackageName;
 
@@ -40,6 +46,16 @@ public class GenerateContractWrappers extends SourceTask {
     @Input @Optional private Integer addressLength;
 
     @Input @Optional private Boolean generateBoth;
+
+    @InputFiles
+    @PathSensitive(PathSensitivity.RELATIVE)
+    public ConfigurableFileCollection getSource() {
+        return sources;
+    }
+
+    public void setSource(Object paths) {
+        this.sources.setFrom(paths);
+    }
 
     @Inject
     public GenerateContractWrappers(final WorkerExecutor executor) {
