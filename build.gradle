@@ -31,7 +31,7 @@ apply {
         download.run {
             src "https://raw.githubusercontent.com/LFDT-web3j/web3j-build-tools/main/gradle/$buildScript/build.gradle"
             dest "$rootDir/gradle/$buildScript/build.gradle"
-            overwrite true
+            overwrite false
             quiet true
             onlyIfModified true
         }
