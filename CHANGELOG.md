@@ -29,7 +29,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### BREAKING CHANGES
 
-* Update to web3j 6.1.0 and update update web3j-solidity-gralde-plugin and web3j-sokt versions[]() 
+* Update to web3j 6.1.0 and update update web3j-solidity-gralde-plugin and web3j-sokt versions[#104](https://github.com/LFDT-web3j/web3j-gradle-plugin/pull/104) 
 
 # [5.0.2](https://github.com/LFDT-web3j/web3j-gradle-plugin/releases/tag/v5.0.2) (2026-01-29)
 
