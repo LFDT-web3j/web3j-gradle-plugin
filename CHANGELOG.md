@@ -3,7 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [5.0.3]() (Upcoming)
+# [6.1.1]() (Upcoming)
+
+### Bug Fixes
+
+*
+
+### Features
+
+*
+
+### BREAKING CHANGES
+
+*
+
+# [6.1.0](https://github.com/LFDT-web3j/web3j-gradle-plugin/releases/tag/v6.1.0) (2026-11-13)
 
 ### Bug Fixes
 
@@ -15,7 +29,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### BREAKING CHANGES
 
-*
+* Update to web3j 6.1.0 and update update web3j-solidity-gralde-plugin and web3j-sokt versions[]() 
 
 # [5.0.2](https://github.com/LFDT-web3j/web3j-gradle-plugin/releases/tag/v5.0.2) (2026-01-29)
 
